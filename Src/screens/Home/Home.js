@@ -13,7 +13,6 @@ import {
   PermissionsAndroid,
 } from 'react-native';
 
-
 import {COLOR} from '../../utils/Colors';
 const {height, width} = Dimensions.get('window');
 import {ImagePath} from '../../utils/ImagePath';
@@ -23,6 +22,7 @@ import WalletHeader from '../../components/Header/WalletHeader';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 import {HOMEBANNER} from '../../restAPI/APIconfig';
+import {CountryCode} from '../../utils/CountryCode';
 
 import LoaderScreen from '../../components/Loader/Loader';
 
@@ -83,7 +83,7 @@ const Home = props => {
         // backIcon={true}
         // onBackPress={() => props.navigation.goBack()}
         HeaderTitle={true}
-        Title=" Moblie Gallery"
+        Title="Gallary"
         Drawer={true}
         onDrawerPress={() => props.navigation.openDrawer()}
         // rightIcon={true}
@@ -217,4 +217,3 @@ const styles = StyleSheet.create({
     margin: 1,
   },
 });
-

@@ -27,7 +27,6 @@ const Drawer = props => {
   const [modalVisible, setModalVisible] = useState(false);
 
   function CustomDrawerContent({navigation}) {
-   
     return (
       <View style={{flex: 1, backgroundColor: COLOR.WHITE}}>
         <View style={styles.profile}>
@@ -79,7 +78,47 @@ const Drawer = props => {
             height: height * 0.67,
             width: width * 0.85,
             backgroundColor: COLOR.POST_TXT,
-          }}></View>
+            // borderEndWidth:1
+          }}>
+          <TouchableOpacity
+            style={styles.bTn}
+            onPress={() => props.navigation.navigate('Profile')}>
+            <Text
+              style={{
+                fontFamily: FONTS.PoppinsSemiBold,
+                fontSize: height / 45,
+                color: COLOR.BLACK,
+              }}>
+              Profile
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('Setting')}
+            style={styles.bTn}>
+            <Text
+              style={{
+                fontFamily: FONTS.PoppinsSemiBold,
+                fontSize: height / 45,
+                color: COLOR.BLACK,
+              }}>
+              Setting
+            </Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('AboutUs')}
+            style={styles.bTn}>
+            <Text
+              style={{
+                fontFamily: FONTS.PoppinsSemiBold,
+                fontSize: height / 45,
+                color: COLOR.BLACK,
+              }}>
+              AboutUs
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
@@ -176,5 +215,13 @@ const styles = StyleSheet.create({
     height: height * 0.2,
     width: width * 0.86,
     backgroundColor: 'white',
+  },
+  bTn: {
+    height: height * 0.067,
+    width: width * 0.75,
+    alignSelf: 'center',
+    // backgroundColor: 'red',
+    // alignItems:'center'
+    justifyContent: 'center',
   },
 });

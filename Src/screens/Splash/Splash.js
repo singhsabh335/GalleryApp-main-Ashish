@@ -40,10 +40,10 @@ const Splash = props => {
         <Text
           style={{
             fontSize: height / 25,
-            color: COLOR.RED,
+            color: COLOR.ORANGE,
             fontWeight: 'bold',
           }}>
-          Welcome
+          India
         </Text>
       </View>
 
@@ -51,10 +51,10 @@ const Splash = props => {
         <Text
           style={{
             fontSize: height / 25,
-            color: COLOR.RED,
+            color: COLOR.ORANGE,
             fontWeight: 'bold',
           }}>
-          Mobile Gallery App
+          FIND YOUR COUNTRY
         </Text>
       </View>
       <View
@@ -64,12 +64,11 @@ const Splash = props => {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-
-          <Image source={ImagePath.IND}
-
-            style={{height:100,width:100}}
-          />
-        </View>
+        <Image
+          source={ImagePath.IND}
+          style={{height: 110, width: 180, borderRadius: 8}}
+        />
+      </View>
     </View>
   );
 };
@@ -77,7 +76,7 @@ export default Splash;
 const styles = StyleSheet.create({
   main: {
     flex: 1,
-    backgroundColor: '#FFD4AA',
+    backgroundColor: '#f0f8ff',
   },
   BaseReward: {
     height: height * 0.3,

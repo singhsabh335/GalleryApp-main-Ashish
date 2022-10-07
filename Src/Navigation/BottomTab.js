@@ -33,7 +33,7 @@ export default function BottomTab() {
       screenOptions={({route}) => ({
         tabBarStyle: {
           position: 'absolute',
-          backgroundColor: COLOR.ORANGE,
+          backgroundColor: COLOR.TEXTINPUT_BG,
           height: height * 0.067,
           borderTopWidth: 0,
           shadowColor: '#000000',
@@ -74,7 +74,7 @@ export default function BottomTab() {
                   style={{
                     fontFamily: 'Lato-Regular',
                     fontSize: height / 78,
-                    color: 'white',
+                    color: 'red',
                     fontWeight: '700',
                   }}>
                   Gallery
@@ -103,13 +103,12 @@ export default function BottomTab() {
                     color: 'black',
                     fontWeight: '700',
                   }}>
-                 Gallery
+                  Gallery
                 </Text>
               </View>
             ),
         }}
       />
-
       <Tab.Screen
         name="Videos"
         component={Videos}
@@ -127,7 +126,7 @@ export default function BottomTab() {
                   width: width * 0.2,
                 }}>
                 <Image
-                  source={ImagePath.PLAY_ICON}
+                  source={ImagePath.IND}
                   style={{
                     height: height * 0.045,
                     width: width * 0.06,
@@ -138,10 +137,10 @@ export default function BottomTab() {
                   style={{
                     fontFamily: 'Lato-Regular',
                     fontSize: height / 75,
-                    color: 'white',
+                    color: 'red',
                     fontWeight: '700',
                   }}>
-                  Videos
+                  Country list
                 </Text>
               </View>
             ) : (
@@ -153,7 +152,7 @@ export default function BottomTab() {
                   width: width * 0.2,
                 }}>
                 <Image
-                  source={ImagePath.PLAY_ICON}
+                  source={ImagePath.IND}
                   style={{
                     height: height * 0.045,
                     width: width * 0.06,
@@ -167,7 +166,7 @@ export default function BottomTab() {
                     color: 'black',
                     fontWeight: '700',
                   }}>
-                  Videos
+                   Country list
                 </Text>
               </View>
             ),

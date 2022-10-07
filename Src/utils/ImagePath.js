@@ -1,6 +1,6 @@
 export const ImagePath = {
-  HOME_ICON: require('../assets/Image/home.png'),
-  IND: require('../assets/Image/gallery.png'),
+  HOME_ICON: require('../assets/Image/gallery.png'),
+  IND: require('../assets/Image/in.png'),
   PLAY_ICON: require('../assets/Image/playicon.png'),
   APP_ICONE: require('../assets/Image/app_icon_without_bg.png'),
   YOUTUBE: require('../assets/Image/youtube.png'),
@@ -9,6 +9,6 @@ export const ImagePath = {
   MY_WALLET: require('../assets/Image/MY_WALLET.png'),
   BACK_ICON: require('../assets/Image/backarrow.png'),
   CARD1: require('../assets/Image/card1.png'),
-  
+
   //===================================================================================================================================
 };
